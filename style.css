@@ -1,0 +1,39 @@
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: olive;
+    text-align: center;
+}
+
+header h1 {
+    flex: 1;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    flex: 1;
+    border: 1px dotted grey;
+    margin: 5px;
+}
+
+.item img {
+    width: 100%;
+}
+
+.bg-cornsilk {
+    background-color: cornsilk;
+}
+
+@media all and (min-width: 800px) {
+    header {
+        flex-direction: row;
+    }
+    .group {
+        flex-direction: row;
+    }
+}
