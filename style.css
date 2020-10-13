@@ -1,8 +1,14 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: grey;
+}
+
 header {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: olive;
+    background-color: #815e0b;
     text-align: center;
 }
 
@@ -17,8 +23,8 @@ header h1 {
 
 .item {
     flex: 1;
-    border: 1px dotted grey;
     margin: 5px;
+    background-color: cornsilk;
 }
 
 .item img {
@@ -30,9 +36,6 @@ header h1 {
 }
 
 @media all and (min-width: 800px) {
-    header {
-        flex-direction: row;
-    }
     .group {
         flex-direction: row;
     }
