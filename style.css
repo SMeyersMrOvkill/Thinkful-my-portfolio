@@ -4,17 +4,42 @@ body {
     background-color: grey;
 }
 
+/* Nav CSS */
+
 header {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: #815e0b;
-    text-align: center;
+    background-color: #000;
+    margin-bottom: 40px;
 }
 
 header h1 {
-    flex: 1;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
 }
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    padding-left: 0px;
+    list-style: none;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px 0 0;
+}
+
+header nav ul li:last-child {
+    margin-right: 0;
+}
+
+/* Content CSS */
 
 .group {
     display: flex;
@@ -35,8 +60,68 @@ header h1 {
     background-color: cornsilk;
 }
 
+/* Form CSS */
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+form button {
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: 0;
+    font-family: Tahoma;
+    font-size: 16px;
+    background: darkgray;
+    color: #000;
+    margin: 0 8px 10px 0;
+}
+form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: white;
+    font-family: arial;
+}
+  
+form input[type=text],
+form input[type=email] {
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+form textarea {
+    height: 4.75rem;
+    width: 100%;
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
 @media all and (min-width: 800px) {
     .group {
         flex-direction: row;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+
+    header h1 {
+        margin: 14px;
+        padding-top: 0;
+    }
+
+    header nav {
+        margin-top: 8px;
+    }
+
+    header nav ul li a:hover {
+        color: #bdbdbd
     }
 }

@@ -8,23 +8,34 @@
 </head>
 <body>
     <header>
-        <h1 class="item">Samuel Meyers</h1>
-        <h4 class="item">A geek who does geeky stuff</h4>
+        <h1 id="home">Samuel Meyers</h1>
+        <nav>
+            <ul id="menu">
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#accounts">Accounts</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
+        <h1 id="about">About</h1>
         <div class="group">
             <div class="item bg-cornsilk">
                 <h1>Intro</h1>
                 <hr />
                 <p>Hi! My name is sam. I am a geek in the Kansas City Metro area, and I love to code and play Minecraft! I also have a very strong work ethic.</p>
-            </div>
-            <div class="item">
-                <img src="sam.jpg" >
-            </div>
-        </div>
-        <div class="group">
-            <div class="item">
-                <h1>About</h1>
                 <p>I love working on websites and other programming projects of all kinds. Nothing gives me the same satisfaction of putting something together and publishing it for the whole world to see.</p>
                 <p>I am always on the lookout for a team I can really gel with and get lots of work done with. I always love to keep it professional and productive. </p>
                 <p>Outside of coding I am STILL a hardcore geek. My interests include Minecraft, Saints' Row, Occasionally gardening, and generally doing lots of small fun projects.</p>
@@ -36,43 +47,72 @@
                     <li>Happy thoughts</li>
                 </ul>
             </div>
-        </div>
-        <div class="group">
             <div class="item">
+                <img src="sam.jpg" >
+            </div>
+        </div>
+        <h1 id="accounts">My Accounts</h1>
+        <div class="group">
+            <div class="item bg-cornsilk">
                 <a href="mailto:thecheesecakejunkie@gmail.com">
                     <img src="email.jpg" alt="email">
                     <p>You may contact me by E-Mail at 'thecheesecakejunkie@gmail.com'</p>
                 </a>
             </div>
-            <div class="item">
+            <div class="item bg-cornsilk">
                 <a href="https://github.com/SMeyersMrOvkill">
                     <img src="github.png" alt="GitHub">
                     <p>Here is my GitHub Account: <a href="https://github.com/SMeyersMrOvkill">Link</a></p>
                 </a>
             </div>
-            <div class="item">
+            <div class="item bg-cornsilk">
                 <a href="https://www.linkedin.com/in/samuel-meyers-9b68bb1b3/">
                     <img src="linkedin.jpg" alt="LinkedIn">
                     <p>Here is my LinkedIn Account: <a href="https://www.linkedin.com/in/samuel-meyers-9b68bb1b3/"></a></p> 
                 </a>
             </div>
         </div>
+        <h1 id="portfolio">Portfolio</h1>
         <div class="group">
-            <div class="item">
+            <div class="item bg-cornsilk">
                 <img src="notfound.jpg">
                 <h2>Perk Up Your Afternoon</h2>
                 <p>A simple report about the usage and history of coffee.</p>
             </div>
-            <div class="item">
+            <div class="item bg-cornsilk">
                 <img src="notfound.jpg">
                 <h2>This Portfolio</h2>
                 <p>A simple portfolio that shows my skills off in a helpful way.</p>
             </div>
-            <div class="item">
+            <div class="item bg-cornsilk">
                 <img src="notfound.jpg">
                 <h2>Another entry</h2>
                 <p>This project doesn't exist yet, but it serves the purpose of demonstrating the wonder that is flexbox.</p>
             </div>
+        </div>
+        <h1 id="contact">Contact</h1>
+        <div class="group">
+            <div class="input">
+                <form action="https://formspree.io/f/xjvpywko" method="POST">
+                    <!-- Name -->
+                    <div class="form-group">
+                        <label for="name">Name: </label>
+                        <input type="text" id="name" name="name" placeholder="Your Name">
+                    </div>
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email">E-Mail Address: </label>
+                        <input type="email" id="email" name="_replyto" placeholder="you@domain.com">
+                    </div>
+                    <!-- Message -->
+                    <div class="form-group">
+                        <label for="message">Message: </label>
+                        <textarea id="message" name="message" placeholder="Sam, I'm saying..."></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="input">&nbsp;</div>
         </div>
     </main>
 </body>
