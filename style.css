@@ -1,13 +1,16 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: grey;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 /* Nav CSS */
 
 header {
-    background-color: #000;
+    background-color: red;
     margin-bottom: 40px;
 }
 
@@ -41,6 +44,10 @@ header nav ul li:last-child {
 
 /* Content CSS */
 
+a,a:visited {
+    color: white;
+}
+
 .group {
     display: flex;
     flex-direction: column;
@@ -49,7 +56,11 @@ header nav ul li:last-child {
 .item {
     flex: 1;
     margin: 5px;
-    background-color: cornsilk;
+    background-color: red;
+}
+
+.transparent {
+    background-color: transparent;
 }
 
 .item img {
@@ -57,7 +68,15 @@ header nav ul li:last-child {
 }
 
 .bg-cornsilk {
-    background-color: cornsilk;
+    background-color: red;
+}
+
+.item p {
+    margin-left: 20px;
+}
+
+h1,h2 {
+    margin-left: 15px;
 }
 
 /* Form CSS */
@@ -73,8 +92,8 @@ form button {
     border: 0;
     font-family: Tahoma;
     font-size: 16px;
-    background: darkgray;
-    color: #000;
+    background: black;
+    color: white;
     margin: 0 8px 10px 0;
 }
 form label {
