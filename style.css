@@ -10,8 +10,9 @@ body {
 /* Nav CSS */
 
 header {
-    background-color: red;
+    background-color: rgb(156, 0, 0);
     margin-bottom: 40px;
+    padding-right: 50px;
 }
 
 header h1 {
@@ -64,8 +65,12 @@ a,a:visited {
 .item {
     flex: 1;
     margin: 5px;
-    background-color: red;
+    background-color: rgb(156, 0, 0);
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .item-sm {
@@ -81,12 +86,16 @@ a,a:visited {
     width: 100%;
 }
 
+.item-auto-align {
+    align-self: flex-start;
+}
+
 .item div img {
     width: 150px;
 }
 
 .bg-cornsilk {
-    background-color: red;
+    background-color: rgb(156, 0, 0);
 }
 
 .item p {
@@ -95,6 +104,10 @@ a,a:visited {
 
 h1,h2 {
     margin-left: 15px;
+}
+
+.item hr {
+    width: 100%;
 }
 
 /* Form CSS */
@@ -136,6 +149,16 @@ form textarea {
     color: #000;
     font-size: 16px;
     margin-bottom: 20px;
+}
+
+@media all and (max-width: 420px) {
+    header nav {
+        flex-direction: row;
+    }
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media all and (min-width: 800px) {
