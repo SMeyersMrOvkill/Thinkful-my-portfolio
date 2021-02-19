@@ -46,17 +46,31 @@ header nav ul li:last-child {
 
 a,a:visited {
     color: white;
+    align-items: center;
+    justify-content: center;
 }
 
 .group {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+}
+
+.group-centered {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .item {
     flex: 1;
     margin: 5px;
     background-color: red;
+    color: white;
+}
+
+.item-sm {
+    width: 150px;
+    max-width: 150px;
 }
 
 .transparent {
@@ -65,6 +79,10 @@ a,a:visited {
 
 .item img {
     width: 100%;
+}
+
+.item div img {
+    width: 150px;
 }
 
 .bg-cornsilk {
