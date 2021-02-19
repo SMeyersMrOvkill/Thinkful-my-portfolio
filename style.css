@@ -104,6 +104,8 @@ a,a:visited {
 
 h1,h2 {
     margin-left: 15px;
+    justify-self: center;
+    align-self: center;
 }
 
 .item hr {
@@ -131,7 +133,7 @@ form label {
     display: block;
     font-size: 18px;
     margin-bottom: 5px;
-    color: white;
+    color: black;
     font-family: arial;
 }
   
